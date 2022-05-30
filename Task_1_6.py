@@ -20,7 +20,7 @@ with open('test_file.txt', 'rb') as file:
 encoding = detect(content)['encoding']
 print(encoding) #   windows-1251
 
-# открываем в нужной кодеровке
+# открываем в нужной кодировке
 with open('test_file.txt', 'r', encoding=encoding) as file:
     content = file.read()
 print(content)
